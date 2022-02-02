@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    
-    <script type="text/javascript">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Styling.css" />
+  </head>
+  <body>
+      <div class="container">
+        <h1>LOGIN</h1>
+        <form>
+          <input type="email" 
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          autocomplete="username"
+          required
+        />
+        <br><br>
+        <input type="password" name="password"
+        id="password" placeholder="Password"
+        autocomplete="current-password"
+        required
+        />
+        <br><br>
+        <div class="btn-center">
+          <button id="submit-btn" 
+          class="btn" type="submit"; >
+          <span>Login</span>
+        </button>
+      </div>
+      <br><br>
+      </form>
+      <div class="link">
         
-    </script>
-</body>
-</html>
+        <a href="https://www.kjscecodecell.com/" target="_blank">
+         <style>
+           a:hover {color:red}
+         </style> Visit the CodeCell Page!
+        </a>
+      </div>    
+      <script type="text/javascript">
+        let submitBtn=document.getElementById("submit-btn");
+        let details=[];
+        submitBtn.addEventListener("click",(e)=>{e.preventDefault();
+        details.push(document.getElementById("email").value); console.log(details);
+        alert("You Have successfully Logged In!"); })
+      </script>
+  </body>
+  </html>
