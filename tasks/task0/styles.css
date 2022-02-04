@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+.center
+{
+    text-align: center;
+}
+
+.circle
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 25%;
+    padding: 25px 0 ;
+}
+
+.bg-red
+{
+    background-color: red;
+}
+.bg-blue
+{
+    background-color: blue;
+}
+.bg-yellow
+{
+    background-color: yellow;
+}
+.bg-violet
+{
+    background-color: violet;
+}
+.bg-green
+{
+    background-color: rgb(0,255,0);
+}
+.bg-orange
+{
+    background-color: orange;
+}
